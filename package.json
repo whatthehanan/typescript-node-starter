@@ -8,7 +8,8 @@
     "dev": "nodemon",
     "prod:build": "tsc",
     "prod:run": "ts-node build/index.js",
-    "prod": "npm run prod:build & npm run prod:run"
+    "prod:clean": "rimraf build",
+    "prod": "npm run prod:clean && npm run prod:build && npm run prod:run"
   },
   "keywords": [],
   "author": "",
@@ -24,7 +25,8 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "nodemon": "^2.0.2",
-    "typescript": "^3.7.4",
-    "ts-node": "^8.5.4"
+    "rimraf": "^3.0.0",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.4"
   }
 }
